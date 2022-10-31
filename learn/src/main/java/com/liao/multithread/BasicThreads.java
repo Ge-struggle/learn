@@ -75,7 +75,7 @@ public class BasicThreads extends Thread {
         for(int i=0;i<SIZE; i++){
             exec.execute(new SerialChecker());
             if(args.length>0){
-                TimeUnit.SECONDS.sleep( new Integer(args[0]));
+                TimeUnit.SECONDS.sleep( 1);
                 System.out.println(" not detected duplicated");
                 System.exit(0);
             }
